@@ -26,7 +26,7 @@ namespace cs27_paskaita_ExceptionHandling
             {
                 Console.WriteLine($"String input outside of bounds of double format for conversion");
             }
-            catch (InvalidCastException)
+            catch (InvalidCastException) // <-- bet čia ne ta klaida man atrodo
             {
                 Console.WriteLine($"Character conversion is not supported");
             }
