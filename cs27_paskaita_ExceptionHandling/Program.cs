@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cs27_paskaita_ExceptionHandling.Solutions;
+using System;
 
 namespace cs27_paskaita_ExceptionHandling
 {
@@ -55,8 +56,14 @@ namespace cs27_paskaita_ExceptionHandling
             Console.WriteLine();
             Solution_01("1.29e325999999");
             Console.WriteLine();
-            Solution_01("");
+            Solution_01("a");
             Console.WriteLine();
+
+            Solution_02(7);
+
+            Solution_03();
+
+            Solution_04();
 
 
 
@@ -66,9 +73,31 @@ namespace cs27_paskaita_ExceptionHandling
 
         public static void Solution_01(string numberInStringType)
         {
-            Console.WriteLine("Solution_01!");
+            Console.WriteLine("Solution_01_Instance!");
             var solution_01 = new Solution_01();
             solution_01.StringToDouble(numberInStringType);
+        }
+
+        public static void Solution_02(int index)
+        {
+            Console.WriteLine("Solution_02!");
+            var solution_02 = new Solution_02();
+            solution_02.Array(index);
+        }
+
+        public static void Solution_03()
+        {
+            Console.WriteLine("Solution_03!");
+            var solution_03 = new Solution_03();
+            solution_03.ArrayAndCalculations();
+        }
+
+        public static void Solution_04()
+        {
+            Console.WriteLine("Solution_04!");
+            var solution_04 = new Solution_04(new System.Collections.Generic.List<int>());
+            solution_04.ReadData();
+            solution_04.PrintTheList();
         }
     }
 }
